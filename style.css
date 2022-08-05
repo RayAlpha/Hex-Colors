@@ -1,0 +1,60 @@
+.container{
+    border: 1px solid black;
+
+    height:95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding:10px;
+    border-radius: 0px;
+    border-color: white;
+}
+.hex-colors{
+    border: 0px solid black;
+    text-align: center;
+}
+.hex-colors h1{
+    animation: colorchange 5s infinite alternate;
+}
+
+@keyframes colorchange {
+    0%{
+        color: indigo;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: indianred;
+    }
+    60%{
+        color: aqua;
+    }
+    80%{
+        color: orangered;
+    }
+    100%{
+        color: palegreen;
+    }
+}
+@media screen and (min-width: 992px) {
+    /* For Large Laptops */
+    /*.container {
+      width: 100vw;
+      margin: auto;
+    }*/
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    /*.btn-color {
+      padding: 2% 2%;
+      margin: auto;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }*/
+  }
